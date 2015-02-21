@@ -8,13 +8,552 @@
 
     <!-- CSS Section-->
     <link href="Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="css/foundation.css" rel="stylesheet" />
+    <link href="css/import.css" rel="stylesheet" />
     <link href="css/mobile.css" rel="stylesheet" />
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-1.8.0.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="Scripts/foundation.min.js"></script>
+    <script src="Scripts/mobile.js"></script>
+    <script src="Scripts/common.js"></script>
+    <script src="Scripts/flick.js"></script>
+
+
+    <script type="text/javascript">
+    $(function () {
+        $("#flick").flick();
+        $("#flick2").flick({ timer: 5000 });
+        $("#flick3").flick({ timer: 5000 });
+        $("#flick4").flick({ timer: 5000 });
+    });
+    </script>
+
 </head>
 <body onload="init();">
 
-    <!--JavaScript Section-->
-    <script src="Scripts/jquery-1.8.0.min.js"></script>
-    <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
-    <script src="Scripts/mobile.js"></script>
+    <!-- HOME PAGE WRAPPER -->
+    <div data-role="page" id="home">
+
+        <header data-role="header">
+            <h1>Welcome to Home</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#project1" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <aside class="large-4 small-6 columns">
+                <img src="images/logo.png" />
+            </aside>
+            <header class="large-8 small-6 columns">
+                <div class='jumbotron'>
+                    <h1>
+                        <span class='effect'>Kyounghyun</span>Ryu
+                    </h1>
+                    <h2>
+                        senior software engineer<sup>*</sup>
+                    </h2>
+                    <h3>
+                        <p class='explanation'>
+                            <sup>*</sup>As a
+                            <span class='guru'>software engineer</span>
+                            with
+                            <em>more than</em>
+                            <span class='ninja'>seven years</span>
+                            of experience using
+                            <span class='robot-zombie'>Java, C++, C#...</span>
+                        </p>
+                    </h3>
+                </div>
+            </header>
+
+        </section>
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <div style="position: relative;" data-controltype="image">
+                <div class="icon-bar five-up">
+                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
+                        <img src="images/googleplus.png" />
+                        <label>Google plus</label>
+                    </a>
+                    <a href="skype:eva700ca?userinfo" class="item">
+                        <img src="images/skype.png" />
+                        <label>Skype</label>
+                    </a>
+                    <a href="https://twitter.com/share" class="item">
+                        <img src="images/twitter.png" />
+                        <label>Twitter</label>
+                    </a>
+                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
+                        <img src="images/linkedin.png" />
+                        <label>Linkedin</label>
+                    </a>
+                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
+                        <img src="images/mail.png" />
+                        <label>Mail</label>
+                    </a>
+                </div>
+            </div>
+            <div class='col-md-12 ' align="center">
+                <p class='subheader'>
+                    Copyright &copy;2014 - 2015
+                    <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+                </p>
+                <p class='subheader'>
+                    Made with <a href="http://getbootstrap.com">Bootstrap</a>,
+                    <a href="http://foundation.zurb.com/">Foungdation</a>, and
+                    <a href="http://jquerymobile.com/">jQuery Mobile</a>.
+                </p>
+                <p><a href="https://github.com/SEAN-KH-RYU/Portfolio">Fork this on Github</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT1 PAGE WRAPPER -->
+    <div data-role="page" id="project1">
+
+        <header data-role="header">
+            <h1>My Projects</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#project1" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#project1" class="ui-btn-active ui-state-persist">Hydroelectric power plant control system</a></li>
+                    <li><a href="#project2">Human resource management system</a></li>
+                    <li><a href="#project3">Airline booking system</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </header>
+
+        <section data-role="content">
+            <aside id="project1" class="large-6 small-6 columns">
+
+                <h5>Hydroelectric power plant control system</h5>
+                <span class='robot-zombie'>
+                    <ul>
+                        <li>Spearheaded creation of cross-platform interface for other departments</li>
+                        <li>Developed and supported application in server-side and client-side using C++ and Java</li>
+                        <li>Managed application to display whole system using UNIX OS and Java on 1206 inch display</li>
+                        <li>Designed database using Oracle and reduced searching speed of data</li>
+                        <li>Using Java, C++, Java Swing, Struts framework</li>
+                    </ul>
+                    </span>
+            </aside>
+            <div class="large-6 small-6 columns" id="flick2">
+                <ul class="flickNav">
+                    <li><a href="#work1"></a></li>
+                    <li><a href="#work2"></a></li>
+                </ul>
+
+                <div class="container">
+                    <div class="itemBox">
+                        <div id="work1" class="item">
+                            <figure><img src="images/work1.png"></figure>
+                        </div>
+                        <div id="work2" class="item">
+                            <figure><img src="images/work2.png"></figure>
+                        </div>
+
+                    </div>
+                </div>
+
+                <ul class="next_prev">
+                    <li class="next">Next</li>
+                    <li class="prev">Prev</li>
+                </ul>
+            </div>
+
+
+            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+
+        </section>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <div style="position: relative;" data-controltype="image">
+                <div class="icon-bar five-up">
+                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
+                        <img src="images/googleplus.png" />
+                        <label>Google plus</label>
+                    </a>
+                    <a href="skype:eva700ca?userinfo" class="item">
+                        <img src="images/skype.png" />
+                        <label>Skype</label>
+                    </a>
+                    <a href="https://twitter.com/share" class="item">
+                        <img src="images/twitter.png" />
+                        <label>Twitter</label>
+                    </a>
+                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
+                        <img src="images/linkedin.png" />
+                        <label>Linkedin</label>
+                    </a>
+                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
+                        <img src="images/mail.png" />
+                        <label>Mail</label>
+                    </a>
+                </div>
+            </div>
+            <div class='col-md-12 ' align="center">
+                <p class='subheader'>
+                    Copyright &copy;2014 - 2015
+                    <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+                </p>
+                <p class='subheader'>
+                    Made with <a href="http://getbootstrap.com">Bootstrap</a>,
+                    <a href="http://foundation.zurb.com/">Foungdation</a>, and
+                    <a href="http://jquerymobile.com/">jQuery Mobile</a>.
+                </p>
+                <p><a href="https://github.com/SEAN-KH-RYU/Portfolio">Fork this on Github</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT2 PAGE WRAPPER -->
+    <div data-role="page" id="project2">
+
+        <header data-role="header">
+            <h1>My Projects</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#project1" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#project1">Hydroelectric power plant control system</a></li>
+                    <li><a href="#project2" class="ui-btn-active ui-state-persist">Human resource management system</a></li>
+                    <li><a href="#project3">Airline booking system</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </header>
+
+        <section data-role="content">
+            <aside id="project2" class="large-6 small-6 columns">
+
+                <h5>Human resource management system</h5>
+                <span class='robot-zombie'>
+                    <ul>
+                        <li>Designed, tested GUI mobile application using Andriod platform</li>
+                        <li>Developed main system to connect sub-system</li>
+                        <li>Designed detail database and user interface</li>
+                    </ul>
+                </span>
+            </aside>
+            <div class="large-6 small-6 columns" id="flick3">
+                <ul class="flickNav">
+                    <li><a href="#hrms1"></a></li>
+                    <li><a href="#hrms2"></a></li>
+                    <li><a href="#hrms3"></a></li>
+                    <li><a href="#hrms4"></a></li>
+                </ul>
+
+                <div class="container">
+                    <div class="itemBox">
+                        <div id="hrms1" class="item">
+                            <figure><img src="images/hrms1.png"></figure>
+                        </div>
+                        <div id="hrms2" class="item">
+                            <figure><img src="images/hrms2.png"></figure>
+                        </div>
+                        <div id="hrms3" class="item">
+                            <figure><img src="images/hrms3.png"></figure>
+                        </div>
+                        <div id="hrms4" class="item">
+                            <figure><img src="images/hrms4.png"></figure>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="next_prev">
+                    <li class="next">Next</li>
+                    <li class="prev">Prev</li>
+                </ul>
+            </div>
+
+
+            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+
+        </section>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <div style="position: relative;" data-controltype="image">
+                <div class="icon-bar five-up">
+                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
+                        <img src="images/googleplus.png" />
+                        <label>Google plus</label>
+                    </a>
+                    <a href="skype:eva700ca?userinfo" class="item">
+                        <img src="images/skype.png" />
+                        <label>Skype</label>
+                    </a>
+                    <a href="https://twitter.com/share" class="item">
+                        <img src="images/twitter.png" />
+                        <label>Twitter</label>
+                    </a>
+                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
+                        <img src="images/linkedin.png" />
+                        <label>Linkedin</label>
+                    </a>
+                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
+                        <img src="images/mail.png" />
+                        <label>Mail</label>
+                    </a>
+                </div>
+            </div>
+            <div class='col-md-12 ' align="center">
+                <p class='subheader'>
+                    Copyright &copy;2014 - 2015
+                    <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+                </p>
+                <p class='subheader'>
+                    Made with <a href="http://getbootstrap.com">Bootstrap</a>,
+                    <a href="http://foundation.zurb.com/">Foungdation</a>, and
+                    <a href="http://jquerymobile.com/">jQuery Mobile</a>.
+                </p>
+                <p><a href="https://github.com/SEAN-KH-RYU/Portfolio">Fork this on Github</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT3 PAGE WRAPPER -->
+    <div data-role="page" id="project3">
+
+        <header data-role="header">
+            <h1>My Projects</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#project1" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#project1">Hydroelectric power plant control system</a></li>
+                    <li><a href="#project2">Human resource management system</a></li>
+                    <li><a href="#project3" class="ui-btn-active ui-state-persist">Airline booking system</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </header>
+
+        <section data-role="content">
+            <aside id="project3" class="large-6 small-6 columns">
+
+                <h5>Airline booking system</h5>
+                <span class='robot-zombie'>
+                    <ul>
+                        <li>Developed prototype web application for new Windows OS</li>
+                        <li>Tested environment of operation system and electronic equipment (QR code reader, Barcode ticket reader, etc.)</li>
+                        <li>Using Spring, EJB framework, Ajax, Java, and JSP</li>
+                    </ul>
+                </span>
+            </aside>
+            <div class="large-6 small-6 columns" id="flick4">
+                <ul class="flickNav">
+                    <li><a href="#ana1"></a></li>
+                    <li><a href="#ana2"></a></li>
+                    <li><a href="#ana3"></a></li>
+                </ul>
+
+                <div class="container">
+                    <div class="itemBox">
+                        <div id="ana1" class="item">
+                            <figure><img src="images/ana1.png"></figure>
+                        </div>
+                        <div id="ana2" class="item">
+                            <figure><img src="images/ana2.png"></figure>
+                        </div>
+                        <div id="ana3" class="item">
+                            <figure><img src="images/ana2.png"></figure>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="next_prev">
+                    <li class="next">Next</li>
+                    <li class="prev">Prev</li>
+                </ul>
+            </div>
+
+
+            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+
+        </section>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <div style="position: relative;" data-controltype="image">
+                <div class="icon-bar five-up">
+                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
+                        <img src="images/googleplus.png" />
+                        <label>Google plus</label>
+                    </a>
+                    <a href="skype:eva700ca?userinfo" class="item">
+                        <img src="images/skype.png" />
+                        <label>Skype</label>
+                    </a>
+                    <a href="https://twitter.com/share" class="item">
+                        <img src="images/twitter.png" />
+                        <label>Twitter</label>
+                    </a>
+                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
+                        <img src="images/linkedin.png" />
+                        <label>Linkedin</label>
+                    </a>
+                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
+                        <img src="images/mail.png" />
+                        <label>Mail</label>
+                    </a>
+                </div>
+            </div>
+            <div class='col-md-12 ' align="center">
+                <p class='subheader'>
+                    Copyright &copy;2014 - 2015
+                    <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+                </p>
+                <p class='subheader'>
+                    Made with <a href="http://getbootstrap.com">Bootstrap</a>,
+                    <a href="http://foundation.zurb.com/">Foungdation</a>, and
+                    <a href="http://jquerymobile.com/">jQuery Mobile</a>.
+                </p>
+                <p><a href="https://github.com/SEAN-KH-RYU/Portfolio">Fork this on Github</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES PAGE WRAPPER -->
+    <div data-role="page" id="services">
+
+        <header data-role="header">
+            <h1>My Services</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" class="ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <p>Your Services Content Goes here</p>
+
+        </section>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <div style="position: relative;" data-controltype="image">
+                <div class="icon-bar five-up">
+                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
+                        <img src="images/googleplus.png" />
+                        <label>Google plus</label>
+                    </a>
+                    <a href="skype:eva700ca?userinfo" class="item">
+                        <img src="images/skype.png" />
+                        <label>Skype</label>
+                    </a>
+                    <a href="https://twitter.com/share" class="item">
+                        <img src="images/twitter.png" />
+                        <label>Twitter</label>
+                    </a>
+                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
+                        <img src="images/linkedin.png" />
+                        <label>Linkedin</label>
+                    </a>
+                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
+                        <img src="images/mail.png" />
+                        <label>Mail</label>
+                    </a>
+                </div>
+            </div>
+            <div class='col-md-12 ' align="center">
+                <p class='subheader'>
+                    Copyright &copy;2014 - 2015
+                    <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+                </p>
+                <p class='subheader'>
+                    Made with <a href="http://getbootstrap.com">Bootstrap</a>,
+                    <a href="http://foundation.zurb.com/">Foungdation</a>, and
+                    <a href="http://jquerymobile.com/">jQuery Mobile</a>.
+                </p>
+                <p><a href="https://github.com/SEAN-KH-RYU/Portfolio">Fork this on Github</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACTS PAGE WRAPPER -->
+    <div data-role="page" id="contacts">
+
+        <header data-role="header">
+            <h1>Contact Me</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" class="ui-btn-active ui-state-persist" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <p>Your Contact info Goes Here</p>
+
+        </section>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <div style="position: relative;" data-controltype="image">
+                <div class="icon-bar five-up">
+                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
+                        <img src="images/googleplus.png" />
+                        <label>Google plus</label>
+                    </a>
+                    <a href="skype:eva700ca?userinfo" class="item">
+                        <img src="images/skype.png" />
+                        <label>Skype</label>
+                    </a>
+                    <a href="https://twitter.com/share" class="item">
+                        <img src="images/twitter.png" />
+                        <label>Twitter</label>
+                    </a>
+                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
+                        <img src="images/linkedin.png" />
+                        <label>Linkedin</label>
+                    </a>
+                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
+                        <img src="images/mail.png" />
+                        <label>Mail</label>
+                    </a>
+                </div>
+            </div>
+            <div class='col-md-12 ' align="center">
+                <p class='subheader'>
+                    Copyright &copy;2014 - 2015
+                    <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+                </p>
+                <p class='subheader'>
+                    Made with <a href="http://getbootstrap.com">Bootstrap</a>,
+                    <a href="http://foundation.zurb.com/">Foungdation</a>, and
+                    <a href="http://jquerymobile.com/">jQuery Mobile</a>.
+                </p>
+                <p><a href="https://github.com/SEAN-KH-RYU/Portfolio">Fork this on Github</a></p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
