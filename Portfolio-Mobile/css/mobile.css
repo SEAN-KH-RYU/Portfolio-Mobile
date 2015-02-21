@@ -117,7 +117,7 @@
             font-weight: bold;
         }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 320px) {
     .jumbotron h1 {
         font-size: 1em;
         padding-top: 50px;
@@ -126,8 +126,36 @@
     .jumbotron h2 {
         font-size: 0.5em;
     }
+    .jumbotron h3 {
+        font-size: 0.2em;
+    }
 }
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    .jumbotron h1 {
+        font-size: 1.6em;
+        padding-top: 30px;
+    }
 
+    .jumbotron h2 {
+        font-size: 0.7em;
+    }
+    .jumbotron h3 {
+        font-size: 0.3em;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+    .jumbotron h1 {
+        font-size: 1.8em;
+        padding-top: 30px;
+    }
+
+    .jumbotron h2 {
+        font-size: 0.9em;
+    }
+    .jumbotron h3 {
+        font-size: 0.4em;
+    }
+}
 @media only screen and (min-width: 481px) and (max-width: 640px) {
     .jumbotron h1 {
         font-size: 2em;
@@ -136,6 +164,9 @@
 
     .jumbotron h2 {
         font-size: 1em;
+    }
+    .jumbotron h3 {
+        font-size: 0.6em;
     }
 }
 @media only screen and (min-width: 641px) and (max-width: 840px) {
@@ -147,6 +178,9 @@
     .jumbotron h2 {
         font-size: 1.5em;
     }
+    .jumbotron h3 {
+        font-size: 0.9em;
+    }
 }
 @media only screen and (min-width: 841px) and (max-width: 1024px) {
     .jumbotron h1 {
@@ -156,6 +190,9 @@
 
     .jumbotron h2 {
         font-size: 2.2em;
+    }
+    .jumbotron h3 {
+        font-size: 1.2em;
     }
 }
 

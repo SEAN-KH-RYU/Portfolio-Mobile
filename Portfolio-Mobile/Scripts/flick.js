@@ -103,7 +103,7 @@ function getCssTranslate(moveX) {
 	flick プラグイン
 -------------------------------------------------------------------------------------*/
 $.fn.flick = function(options) {
-    console.log("flick start")
+
 	options = $['extend']({
 		contentNum: 0,
 		centerPosition: true,
@@ -264,8 +264,7 @@ $.fn.flick = function(options) {
 	$(window).bind(('orientationchange resize load'), function(){
 		$itemBox.css({width : $item.eq(0).width() * $item.length});
 		
-		//containerOffsetLeft = $container.offset().left;
-		containerOffsetLeft = 0;
+        containerOffsetLeft = $container.offset().left;
 		containerBaseX = ($container.innerWidth() - $item.eq(0).width()) / 2;
 		
 		/* ウィンドウエリアいっぱいに広げる場合
