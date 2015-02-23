@@ -1,6 +1,9 @@
 ﻿body {
     margin: 0;
 }
+body p {
+font-size: 0.2em;
+}
 /* HEADER */
 #header {
 	background: #2e343d;
@@ -194,18 +197,6 @@
     .jumbotron h3 {
         font-size: 1.2em;
     }
-}
-
-#about p {
-    font-size: 120%;
-}
-
-    #about p.last-para {
-        font-size: 90%;
-    }
-
-#about img {
-    margin: 0 0 20px 20px;
 }
 
 @media only screen and (max-width: 480px) {

@@ -11,6 +11,7 @@
     <link href="css/foundation.css" rel="stylesheet" />
     <link href="css/import.css" rel="stylesheet" />
     <link href="css/mobile.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
 
     <!-- JavaScript Section -->
     <script src="Scripts/jquery-1.8.0.min.js"></script>
@@ -29,7 +30,6 @@
         $("#flick4").flick({ timer: 5000 });
     });
     </script>
-
 </head>
 <body onload="init();">
 
@@ -40,71 +40,51 @@
             <h1>Welcome to Home</h1>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#home" class="btn ui-btn-active ui-state-persist" data-icon="home" data-transition="slide">Home</a></li>
                     <li><a href="#project1" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide">About Me</a></li>
                     <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
         </header>
 
         <section data-role="content">
-            <aside class="large-4 small-6 columns">
-                <img src="images/logo.png" />
-            </aside>
-            <header class="large-8 small-6 columns">
-                <div class='jumbotron'>
-                    <h1>
-                        <span class='effect'>Kyounghyun</span>Ryu
-                    </h1>
-                    <h2>
-                        senior software engineer<sup>*</sup>
-                    </h2>
-                    <h3>
-                        <p class='explanation'>
-                            <sup>*</sup>As a
-                            <span class='guru'>software engineer</span>
-                            with
-                            <em>more than</em>
-                            <span class='ninja'>seven years</span>
-                            of experience using
-                            <span class='robot-zombie'>Java, C++, C#...</span>
-                        </p>
-                    </h3>
-                </div>
-            </header>
-
+            <div class="row">
+                <aside class="large-4 small-6 columns">
+                    <img src="images/logo.png" />
+                </aside>
+                <header class="large-8 small-6 columns">
+                    <div class='jumbotron'>
+                        <h1>
+                            <span class='effect'>Kyounghyun</span>Ryu
+                        </h1>
+                        <h2>
+                            senior software engineer<sup>*</sup>
+                        </h2>
+                        <h3>
+                            <p class='explanation'>
+                                <sup>*</sup>As a
+                                <span class='guru'>software engineer</span>
+                                with
+                                <em>more than</em>
+                                <span class='ninja'>seven years</span>
+                                of experience using
+                                <span class='robot-zombie'>Java, C++, C#...</span>
+                            </p>
+                        </h3>
+                    </div>
+                </header>
+            </div>
         </section>
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <div style="position: relative;" data-controltype="image">
-                <div class="icon-bar five-up">
-                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
-                        <img src="images/googleplus.png" />
-                    </a>
-                    <a href="skype:eva700ca?userinfo" class="item">
-                        <img src="images/skype.png" />
-                    </a>
-                    <a href="https://twitter.com/share" class="item">
-                        <img src="images/twitter.png" />
-                    </a>
-                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
-                        <img src="images/linkedin.png" />
-                    </a>
-                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
-                        <img src="images/mail.png" />
-                    </a>
-                </div>
-            </div>
-            <div class='col-md-12 ' align="center">
-                <h6>
-                    <p class='subheader'>
-                        Copyright &copy;2014 - 2015
-                        <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
-                    </p>
-                </h6>
-                
-            </div>
-        </div>
+        
+        <footer data-role="footer" data-position="fixed">
+            
+            <h6><a href="http://portfolio.sean-k-ryu.com?mobile">PC Page</a><br />
+                Copyright &copy;2015
+                <a href='http://m.sean.kyounghyun.ryu.com'>Sean Ryu</a>
+            </h6>
+
+        </footer>
     </div>
 
     <!-- PROJECT1 PAGE WRAPPER -->
@@ -115,14 +95,14 @@
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#project1" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#project1" class="btn ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide">About Me</a></li>
                     <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#project1" class="ui-btn-active ui-state-persist">Hydroelectric power plant control system</a></li>
+                    <li><a href="#project1" class="btn ui-btn-active ui-state-persist">Hydroelectric power plant control system</a></li>
                     <li><a href="#project2">Human resource management system</a></li>
                     <li><a href="#project3">Airline booking system</a></li>
                 </ul>
@@ -130,72 +110,47 @@
         </header>
 
         <section data-role="content">
-            <aside id="project1" class="large-6 small-6 columns">
+            <div class="row">
+                <aside id="project1" class="large-6 small-6 columns">
 
-                <h5>Hydroelectric power plant control system</h5>
-                <span class='robot-zombie'>
-                    <ul>
-                        <li>C++, Java Swing, Struts, Spring framework</li>
+                    <h5>Hydroelectric power plant control system</h5>
+                    <ul class='robot-zombie'>
+                        <li>-C++, Java Swing, Struts, Spring framework</li>
                     </ul>
-                </span>
-            </aside>
-            <div class="large-6 small-6 columns" id="flick2">
-                <ul class="flickNav">
-                    <li><a href="#work1"></a></li>
-                    <li><a href="#work2"></a></li>
-                    <li><a href="#work3"></a></li>
-                </ul>
+                </aside>
+                <div class="large-6 small-6 columns" id="flick2">
+                    <ul class="flickNav">
+                        <li><a href="#work1"></a></li>
+                        <li><a href="#work2"></a></li>
+                        <li><a href="#work3"></a></li>
+                    </ul>
 
-                <div class="container">
-                    <div class="itemBox">
-                        <div id="work1" class="item">
-                            <figure><img src="images/work1.png"></figure>
-                        </div>
-                        <div id="work2" class="item">
-                            <figure><img src="images/work2.png"></figure>
-                        </div>
-                        <div id="work3" class="item">
-                            <figure><img src="images/work3.png"></figure>
+                    <div class="container">
+                        <div class="itemBox">
+                            <div id="work1" class="item">
+                                <figure><img src="images/work1.png"></figure>
+                            </div>
+                            <div id="work2" class="item">
+                                <figure><img src="images/work2.png"></figure>
+                            </div>
+                            <div id="work3" class="item">
+                                <figure><img src="images/work3.png"></figure>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
             </div>
-
-
-            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
-
         </section>
 
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <div style="position: relative;" data-controltype="image">
-                <div class="icon-bar five-up">
-                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
-                        <img src="images/googleplus.png" />
-                    </a>
-                    <a href="skype:eva700ca?userinfo" class="item">
-                        <img src="images/skype.png" />
-                    </a>
-                    <a href="https://twitter.com/share" class="item">
-                        <img src="images/twitter.png" />
-                    </a>
-                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
-                        <img src="images/linkedin.png" />
-                    </a>
-                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
-                        <img src="images/mail.png" />
-                    </a>
-                </div>
-            </div>
-            <div class='col-md-12 ' align="center">
-                <h6>
-                    <p class='subheader'>
-                        Copyright &copy;2014 - 2015
-                        <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
-                    </p>
-                </h6>
+        <footer data-role="footer" data-position="fixed">
 
-            </div>
-        </div>
+            <h6>
+                Copyright &copy;2015
+                <a href='http://m.sean.kyounghyun.ryu.com'>Sean Ryu</a>
+            </h6>
+
+        </footer>
     </div>
 
     <!-- PROJECT2 PAGE WRAPPER -->
@@ -206,92 +161,69 @@
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#project1" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#project1" class="btn ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide">About Me</a></li>
                     <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
             <div data-role="navbar">
                 <ul>
                     <li><a href="#project1">Hydroelectric power plant control system</a></li>
-                    <li><a href="#project2" class="ui-btn-active ui-state-persist">Human resource management system</a></li>
+                    <li><a href="#project2" class="btn ui-btn-active ui-state-persist">Human resource management system</a></li>
                     <li><a href="#project3">Airline booking system</a></li>
                 </ul>
             </div><!-- /navbar -->
         </header>
 
         <section data-role="content">
-            <aside id="project2" class="large-6 small-6 columns">
+            <div class="row">
+                <aside id="project2" class="large-6 small-6 columns">
 
-                <h5>Human resource management system</h5>
-                <span class='robot-zombie'>
-                    <ul>
-                        <li>Designed, tested GUI mobile application using Andriod platform</li>
-                        <li>Designed detail database and user interface</li>
+                    <h5>Human resource management system</h5>
+                    <ul class='robot-zombie'>
+                        <li>-Designed detail DB and UI</li>
+                        <li>-Developed Andriod application</li>
                     </ul>
-                </span>
-            </aside>
-            <div class="large-6 small-6 columns" id="flick3">
-                <ul class="flickNav">
-                    <li><a href="#hrms1"></a></li>
-                    <li><a href="#hrms2"></a></li>
-                    <li><a href="#hrms3"></a></li>
-                    <li><a href="#hrms4"></a></li>
-                </ul>
+                </aside>
+                <div class="large-6 small-6 columns" id="flick3">
+                    <ul class="flickNav">
+                        <li><a href="#hrms1"></a></li>
+                        <li><a href="#hrms2"></a></li>
+                        <li><a href="#hrms3"></a></li>
+                        <li><a href="#hrms4"></a></li>
+                    </ul>
 
-                <div class="container">
-                    <div class="itemBox">
-                        <div id="hrms1" class="item">
-                            <figure><img src="images/hrms1.png"></figure>
-                        </div>
-                        <div id="hrms2" class="item">
-                            <figure><img src="images/hrms2.png"></figure>
-                        </div>
-                        <div id="hrms3" class="item">
-                            <figure><img src="images/hrms3.png"></figure>
-                        </div>
-                        <div id="hrms4" class="item">
-                            <figure><img src="images/hrms4.png"></figure>
+                    <div class="container">
+                        <div class="itemBox">
+                            <div id="hrms1" class="item">
+                                <figure><img src="images/hrms1.png"></figure>
+                            </div>
+                            <div id="hrms2" class="item">
+                                <figure><img src="images/hrms2.png"></figure>
+                            </div>
+                            <div id="hrms3" class="item">
+                                <figure><img src="images/hrms3.png"></figure>
+                            </div>
+                            <div id="hrms4" class="item">
+                                <figure><img src="images/hrms4.png"></figure>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
             </div>
-
-
-            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
-
         </section>
 
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <div style="position: relative;" data-controltype="image">
-                <div class="icon-bar five-up">
-                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
-                        <img src="images/googleplus.png" />
-                    </a>
-                    <a href="skype:eva700ca?userinfo" class="item">
-                        <img src="images/skype.png" />
-                    </a>
-                    <a href="https://twitter.com/share" class="item">
-                        <img src="images/twitter.png" />
-                    </a>
-                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
-                        <img src="images/linkedin.png" />
-                    </a>
-                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
-                        <img src="images/mail.png" />
-                    </a>
-                </div>
-            </div>
-            <div class='col-md-12 ' align="center">
-                <h6>
-                    <p class='subheader'>
-                        Copyright &copy;2014 - 2015
-                        <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
-                    </p>
-                </h6>
+        <footer data-role="footer" data-position="fixed">
 
-            </div>
-        </div>
+            <h6>
+                Copyright &copy;2015
+                <a href='http://m.sean.kyounghyun.ryu.com'>Sean Ryu</a>
+            </h6>
+
+        </footer>
     </div>
 
     <!-- PROJECT3 PAGE WRAPPER -->
@@ -302,8 +234,8 @@
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#project1" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#project1" class="btn ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide">About Me</a></li>
                     <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
@@ -311,131 +243,104 @@
                 <ul>
                     <li><a href="#project1">Hydroelectric power plant control system</a></li>
                     <li><a href="#project2">Human resource management system</a></li>
-                    <li><a href="#project3" class="ui-btn-active ui-state-persist">Airline booking system</a></li>
+                    <li><a href="#project3" class="btn ui-btn-active ui-state-persist">Airline booking system</a></li>
                 </ul>
             </div><!-- /navbar -->
         </header>
 
         <section data-role="content">
-            <aside id="project3" class="large-6 small-6 columns">
-
-                <h5>Airline booking system</h5>
-                <span class='robot-zombie'>
-                    <ul>
-                        <li>Tested electronic equipment</li>
-                        <li>Using Spring, EJB framework, Ajax, Java, and JSP</li>
+            <div class="row">
+                <aside id="project3" class="large-6 small-6 columns">
+                    <h5>Airline booking system</h5>
+                    <ul class='robot-zombie'>
+                        <li>-Tested electronic equipment</li>
+                        <li>-Using Spring, EJB framework, Ajax, and JSP</li>
                     </ul>
-                </span>
-            </aside>
-            <div class="large-6 small-6 columns" id="flick4">
-                <ul class="flickNav">
-                    <li><a href="#ana1"></a></li>
-                    <li><a href="#ana2"></a></li>
-                    <li><a href="#ana3"></a></li>
-                </ul>
+                </aside>
 
-                <div class="container">
-                    <div class="itemBox">
-                        <div id="ana1" class="item">
-                            <figure><img src="images/ana1.png"></figure>
-                        </div>
-                        <div id="ana2" class="item">
-                            <figure><img src="images/ana2.png"></figure>
-                        </div>
-                        <div id="ana3" class="item">
-                            <figure><img src="images/ana2.png"></figure>
+                <div class="large-6 small-6 columns" id="flick4">
+                    <ul class="flickNav">
+                        <li><a href="#ana1"></a></li>
+                        <li><a href="#ana2"></a></li>
+                        <li><a href="#ana3"></a></li>
+                    </ul>
+
+                    <div class="container">
+                        <div class="itemBox">
+                            <div id="ana1" class="item">
+                                <figure><img src="images/ana1.png"></figure>
+                            </div>
+                            <div id="ana2" class="item">
+                                <figure><img src="images/ana2.png"></figure>
+                            </div>
+                            <div id="ana3" class="item">
+                                <figure><img src="images/ana2.png"></figure>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
             </div>
-
-
-            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
-
         </section>
 
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <div style="position: relative;" data-controltype="image">
-                <div class="icon-bar five-up">
-                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
-                        <img src="images/googleplus.png" />
-                    </a>
-                    <a href="skype:eva700ca?userinfo" class="item">
-                        <img src="images/skype.png" />
-                    </a>
-                    <a href="https://twitter.com/share" class="item">
-                        <img src="images/twitter.png" />
-                    </a>
-                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
-                        <img src="images/linkedin.png" />
-                    </a>
-                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
-                        <img src="images/mail.png" />
-                    </a>
-                </div>
-            </div>
-            <div class='col-md-12 ' align="center">
-                <h6>
-                    <p class='subheader'>
-                        Copyright &copy;2014 - 2015
-                        <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
-                    </p>
-                </h6>
+        <footer data-role="footer" data-position="fixed">
 
-            </div>
-        </div>
+            <h6>
+                Copyright &copy;2015
+                <a href='http://m.sean.kyounghyun.ryu.com'>Sean Ryu</a>
+            </h6>
+
+        </footer>
     </div>
 
-    <!-- SERVICES PAGE WRAPPER -->
-    <div data-role="page" id="services">
+    <!-- ABOUT ME PAGE WRAPPER -->
+    <div data-role="page" id="about">
 
         <header data-role="header">
-            <h1>My Services</h1>
+            <h1>About ME</h1>
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
                     <li><a href="#project1" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" class="ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#about" class="btn ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide">About Me</a></li>
                     <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
         </header>
 
         <section data-role="content">
-            <p>Your Services Content Goes here</p>
-
-        </section>
-
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <div style="position: relative;" data-controltype="image">
-                <div class="icon-bar five-up">
-                    <a href="https://plus.google.com/u/0/102549438948363151377/posts" class="item">
-                        <img src="images/googleplus.png" />
-                    </a>
-                    <a href="skype:eva700ca?userinfo" class="item">
-                        <img src="images/skype.png" />
-                    </a>
-                    <a href="https://twitter.com/share" class="item">
-                        <img src="images/twitter.png" />
-                    </a>
-                    <a href="https://ca.linkedin.com/in/SeanKRyu" class="item">
-                        <img src="images/linkedin.png" />
-                    </a>
-                    <a href="mailto:sean.k.ryu@gmail.com.com" class=" item">
-                        <img src="images/mail.png" />
-                    </a>
-                </div>
-            </div>
-            <div class='col-md-12 ' align="center">
-                <h6>
-                    <p class='subheader'>
-                        Copyright &copy;2014 - 2015
-                        <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
+            <div class="row">
+                <h4>Skills</h4>
+                <aside id="skills" class="large-12 columns" style="font-size:0.1em">
+                    <p>Core Java, Java Swing, C#, C++, C</p>
+                    <p>J2EE, Spring, Struts, Ajax, ASP, .Net, XML, HTML, JavaScript, jQuery, Foundation, Bootstrap, Mean.io</p>
+                    <p>Database : Oracle, MS-SQL, Mysql, PL-SQL, UML</p>
+                    <p>IDE : Eclipse, Visual Studio, NetBean, Android Studio, LINUX and UNIX shell scripting</p>
+                </aside>
+                <h4>Educations</h4>
+                <aside id="skills" class="large-12 columns" style="font-size:0.1em">
+                    <p>
+                        <b>Software Engineering Technology Advanced Diploma</b><br />
+                        Centennial College, Toronto, ON
                     </p>
-                </h6>
-
+                    <p>
+                        <b>Bachelor Degree of information engineering</b><br />
+                        Kongju Naitional University, Gongju, South Korea
+                    </p>
+                </aside>
             </div>
-        </div>
+        </section>
+        <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+        <footer data-role="footer" data-position="fixed">
+
+            <h6>
+                Copyright &copy;2015
+                <a href='http://m.sean.kyounghyun.ryu.com'>Sean Ryu</a>
+            </h6>
+
+        </footer>
     </div>
 
     <!-- CONTACTS PAGE WRAPPER -->
@@ -447,17 +352,39 @@
                 <ul>
                     <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
                     <li><a href="#project1" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
-                    <li><a href="#contacts" class="ui-btn-active ui-state-persist" data-icon="info" data-transition="slide">Contact</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide">About Me</a></li>
+                    <li><a href="#contacts" class="btn ui-btn-active ui-state-persist" data-icon="info" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
         </header>
 
         <section data-role="content">
-            <p>Your Contact info Goes Here</p>
-
+            <div class="row">
+                <aside id="contact" class="large-12 columns">
+                    <h3>Contact Info</h3>
+                    <h4>E-mail</h4>
+                    <p class=MsoNormal style='margin-right:-20.05pt;line-height:115%'>
+                        <b>
+                            <span lang=EN-US
+                                  style='font-size:11.0pt;line-height:115%;font-family:"Arial Black","sans-serif"'>
+                                <a href="mailto:sean.k.ryu@gmail.com">sean.k.ryu@gmail.com</a>
+                            </span>
+                        </b>
+                    </p>
+                    <h4>Phone</h4>
+                    <p class=MsoNormal style='margin-right:-20.05pt;line-height:115%'>
+                        <b>
+                            <span lang=EN-US
+                                  style='font-size:11.0pt;line-height:115%;font-family:"Arial Black","sans-serif"'>
+                                <a href="tel:6472747261">647 274 ****</a>
+                            </span>
+                        </b>
+                    </p>
+                </aside>
+            </div>
+            
         </section>
-
+        <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
         <div data-theme="a" data-role="footer" data-position="fixed">
             <div style="position: relative;" data-controltype="image">
                 <div class="icon-bar five-up">
@@ -478,18 +405,15 @@
                     </a>
                 </div>
             </div>
-            <div class='col-md-12 ' align="center">
-                <h6>
-                    <p class='subheader'>
-                        Copyright &copy;2014 - 2015
-                        <a href='http://sean.kyounghyun.ryu.com'>Sean Kyounghyun Ryu</a>
-                    </p>
-                </h6>
-
+            <div class="row">
+                <div class='col-md-12' align="center">
+                    <h6 class='subheader'>
+                        Copyright &copy;2015
+                        <a href='http://sean.kyounghyun.ryu.com'>Sean Ryu</a>
+                    </h6>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-
 </body>
 </html>
