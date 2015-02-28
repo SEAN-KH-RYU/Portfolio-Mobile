@@ -284,7 +284,10 @@
     <Content Include="css\default.css" />
     <Content Include="css\foundation.css" />
     <Content Include="css\import.css" />
+    <Content Include="css\jquery.mobile.icons.min.css" />
     <Content Include="css\mobile.css" />
+    <Content Include="css\mobileTheme.css" />
+    <Content Include="css\mobileTheme.min.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\templates.css" />
     <Content Include="images\ana1.png" />
